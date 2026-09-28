@@ -27,8 +27,8 @@ function loginPage(){return `<div class="container"><div class="card" style="max
 function login(){let n=document.getElementById("name").value.trim(),e=document.getElementById("email").value.trim(),p=document.getElementById("pass").value;if(n.length<2||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)||p.length<6){toast("Invalid details");return}user={name:n,email:e};save();go("home");toast("Login successful")}
 async function render(){document.getElementById("count").textContent=cart.reduce((s,i)=>s+i.qty,0);let a=document.getElementById("app");if(page==="cart"){await cartPage();return}a.innerHTML=page==="home"?home():page==="products"?productsPage():page==="wishlist"?wishlistPage():page==="orders"?ordersPage():loginPage()}
 render();
-
-
+git commit -m "Initial commit"
+git remote add origin[ https://github.com/username/repository-name.git](https://github.com/zeeyashaikh20-prog/bughunt)
 
 
 
